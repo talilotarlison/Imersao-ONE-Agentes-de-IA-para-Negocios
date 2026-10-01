@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde SP - Dashboard 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        border: 'rgba(255, 255, 255, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #f4f4f5;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .glass-card {
+            background: rgba(30, 30, 35, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(40, 40, 45, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #a5f3fc, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+    
+    <main class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="mb-12 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text tracking-tight">
+                Painel de Saúde SP 2026
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl">
+                Atualizações estratégicas e desenvolvimentos recentes na rede de saúde pública do estado.
+            </p>
+        </header>
+
+        <!-- Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <!-- Item 1: Sarampo -->
+            <div class="glass-card p-8 rounded-3xl md:col-span-8 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-xs font-bold uppercase tracking-wider mb-4">Alerta de Saúde</span>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-white leading-tight">Estado de SP chega a 37 casos de sarampo em 2026</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        A Secretaria Estadual da Saúde de São Paulo confirmou que o estado atingiu 37 casos de sarampo em 2026. A maioria dos registros (33) concentra-se na capital paulista, e cerca de 73% dos pacientes não possuíam registro de vacinação ou estavam com o esquema incompleto, acendendo o alerta para a necessidade de imunização.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="https://www.google.com/search?q=estado-de-sp-chega-a-37-casos-de-sarampo-em-2026" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-2">
+                        Ver detalhes do boletim →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 2: CER III -->
+            <div class="glass-card p-8 rounded-3xl md:col-span-4 flex flex-col justify-between border-t-4 border-t-cyan-500">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-cyan-100">Expansão da Rede CER III</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Inaugurado em 25 de setembro de 2026, o Centro Especializado em Reabilitação no Alto Vale do Paraíba amplia a assistência do SUS com capacidade para 67 mil pessoas.
+                    </p>
+                </div>
+                <a href="https://www.google.com/search?q=centro-especializado-em-reabilitacao-inicia-atendimentos-em-sao-jose-dos-campos" target="_blank" class="w-full py-3 bg-cyan-950/30 border border-cyan-500/20 rounded-xl text-center text-cyan-300 hover:bg-cyan-950/50 transition-colors">
+                    Saber mais
+                </a>
+            </div>
+
+            <!-- Item 3: Hospitais -->
+            <div class="glass-card p-8 rounded-3xl md:col-span-12 flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Reconhecimento Internacional de Excelência</h3>
+                    <p class="text-gray-300 mb-4">
+                        Os hospitais municipais Vila Santa Catarina, M'Boi Mirim e Menino Jesus foram destacados em rankings globais de 2026 pelo investimento em telemedicina e gestão especializada.
+                    </p>
+                    <a href="https://www.google.com/search?q=prefeitura-de-sao-paulo-tem-tres-hospitais-em-rankings-internacionais-de-excelencia" target="_blank" class="inline-flex items-center text-violet-400 hover:text-violet-300 font-semibold gap-2">
+                        Ler relatório completo sobre gestão hospitalar →
+                    </a>
+                </div>
+                <div class="h-32 w-full md:w-48 bg-gradient-to-br from-violet-600/20 to-indigo-600/20 rounded-2xl flex items-center justify-center border border-violet-500/20">
+                    <span class="text-5xl">🏥</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

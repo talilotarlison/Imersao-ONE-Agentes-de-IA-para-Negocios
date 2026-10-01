@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARI NEWS // Inovação e Indústria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0D0D0D',
+                        accent: '#3B82F6',
+                        subtle: '#F9F9F9',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); }
+        .gradient-text {
+            background: linear-gradient(90deg, #000 0%, #333 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#FDFDFD] text-gray-900 selection:bg-black selection:text-white">
+
+    <div class="max-w-6xl mx-auto px-6 py-12 md:py-20">
+        <!-- Header -->
+        <header class="mb-20 flex flex-col items-center text-center">
+            <span class="inline-block py-1 px-3 mb-6 text-[10px] font-bold tracking-[0.3em] uppercase bg-black text-white">ARI NEWS</span>
+            <h1 class="font-display text-5xl md:text-7xl font-extrabold tracking-tight mb-6 gradient-text">
+                Inovação & Indústria
+            </h1>
+            <p class="text-gray-500 max-w-xl text-lg">
+                Cobertura estratégica sobre a transformação industrial e o ecossistema de tecnologia no Brasil em 2026.
+            </p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Item 1 -->
+            <article class="group flex flex-col h-full bg-white p-8 border border-gray-100 hover:shadow-2xl transition-all duration-500 hover-lift">
+                <div class="mb-6">
+                    <span class="text-[11px] font-bold tracking-widest text-blue-600 uppercase">Finanças & Indústria</span>
+                </div>
+                <h2 class="font-display text-2xl font-bold leading-snug mb-4">BNDES e Finep aprovam R$ 104,4 bilhões</h2>
+                <p class="text-gray-600 mb-8 flex-grow leading-relaxed text-sm">
+                    Um salto de 413% em relação ao período anterior, impulsionando IA, semicondutores e a digitalização massiva do parque industrial paulista.
+                </p>
+                <a href="https://www.google.com/search?q=bndes-e-finep-aprovam-r-104-4-bilhoes-para-inovacao-na-industria" target="_blank" class="text-[12px] font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 decoration-blue-500 hover:text-blue-600">Ler Relatório</a>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="group flex flex-col h-full bg-white p-8 border border-gray-100 hover:shadow-2xl transition-all duration-500 hover-lift">
+                <div class="mb-6">
+                    <span class="text-[11px] font-bold tracking-widest text-blue-600 uppercase">Ecossistema Startup</span>
+                </div>
+                <h2 class="font-display text-2xl font-bold leading-snug mb-4">Brazil at Silicon Valley em SP</h2>
+                <p class="text-gray-600 mb-8 flex-grow leading-relaxed text-sm">
+                    A estreia da edição brasileira reuniu gigantes como Nubank e startups de ponta para integrar o ecossistema brasileiro às inovações globais.
+                </p>
+                <a href="https://www.google.com/search?q=brazil-at-silicon-valley-leva-evento-do-vale-do-silicio-para-sao-paulo-pela-primeira-vez" target="_blank" class="text-[12px] font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 decoration-blue-500 hover:text-blue-600">Ver Destaques</a>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="group flex flex-col h-full bg-black text-white p-8 hover:shadow-2xl transition-all duration-500 hover-lift">
+                <div class="mb-6">
+                    <span class="text-[11px] font-bold tracking-widest text-blue-400 uppercase">Inteligência Artificial</span>
+                </div>
+                <h2 class="font-display text-2xl font-bold leading-snug mb-4">IA Conference Brasil 2026</h2>
+                <p class="text-gray-300 mb-8 flex-grow leading-relaxed text-sm">
+                    Reunindo mais de 1.300 profissionais, o maior evento do setor no país discutiu a aplicação prática de "Agentic AI" e o futuro da tecnologia.
+                </p>
+                <a href="https://www.google.com/search?q=ia-conference-brasil-2026-reune-mais-de-1-300-profissionais-em-sao-paulo" target="_blank" class="text-[12px] font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 decoration-white hover:text-blue-400">Explorar</a>
+            </article>
+
+        </main>
+
+        <!-- Decorative Element -->
+        <div class="mt-24 pt-12 border-t border-gray-100 flex justify-center">
+            <div class="w-2 h-2 rounded-full bg-gray-300 mx-1"></div>
+            <div class="w-2 h-2 rounded-full bg-gray-300 mx-1"></div>
+            <div class="w-2 h-2 rounded-full bg-gray-300 mx-1"></div>
+        </div>
+    </div>
+
+</body>
+</html>
